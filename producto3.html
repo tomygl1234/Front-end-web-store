@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front end Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="/FrontEndStore_inicio/img/logo.png" alt="logotipo">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="index.html">Tienda</a>
+        <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+    </nav>
+    <main class="contenedor">
+        <h1>ReactJS</h1>
+
+        <div class="camisa">
+            <img class="camisa__imagen" src="/FrontEndStore_inicio/img/3.jpg" alt="imagen del producto">
+            <div class="camisa__contenido">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias illum saepe 
+                   facilis dolorum veniam nihil odit quibusdam nulla!
+                   Corporis hic sapiente doloribus similique, voluptatum ipsam dolorum esse amet odit! Ab.</p>
+
+                   <form class="formulario"  action="">
+                       <select class="formulario__campo">
+                           <option disabled selected>--Elige tu talla--</option> <!-- Es para poner como default esta opcion y no se repita -->
+                           <option>XS</option>
+                           <option>S</option>
+                           <option>M</option>
+                           <option>L</option>
+                           <option>XL</option>
+                           <option>XLL</option>
+                       </select>
+                       <input class="formulario__campo" type="number" placeholder="Cantidad" min="1"> <!-- min=1 para que sea el minimo y no tiren negativos -->
+                       <input class="formulario__submit" type="submit" value="Agregar al carrito">
+                       <a class="formulario__boton boton--anterior" href="producto2.html">Anterior</a>
+                       <a class="formulario__boton boton--siguiente" href="producto4.html">Siguiente</a>
+                   </form>
+
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__texto">Front End Store - Todos los derechos Reservados 2022.</p>
+    </footer>
+    
+</body>
+</html>
